@@ -2,9 +2,9 @@
 <div class="container">
 <h1>All lists</h1>
 <% @lists.each do |list| %>
-<%= link_to list.name, list_path(list) %>
+<h2><%= link_to list.name, list_path(list) %></h2>
 <% end %>
 <br>
-<%= link_to 'Create a new list', new_list_path(@list) %>
+<h3><%= link_to 'Create a new list', new_list_path(@list) %></h3>
 <br>
 </div>
